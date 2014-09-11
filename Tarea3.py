@@ -6,7 +6,7 @@ Tarea 3 Ayudantia Computación Paralela Segundo Semestre 2014.
 Integrantes: Jonathan León S. (johnnysavior)
              Juan Cortez G. ()
              Christopher Salvatierra L. (Chris2141)
-             Felipe Alvarez R. ()
+             Felipe Alvarez R. (fliseven)
 """
 
 """
@@ -31,16 +31,16 @@ for indice_i in range(len(matriz)):
     for indice_j in range(len(matriz[indice_i])):
         matriz[indice_i][indice_j]=int(matriz[indice_i][indice_j])
 
-#definimos algunas cuantas variables necesarias para multiplicar
+#definimos algunas cuantas variables necesarias para multiplicar el producto final
 mayor=-999999999
 producto=int()
 
-#definimos variables donde guardaremos los 4 numeros que generan la multiplicacion mas grande
+#definimos variables donde guardaremos los 4 numeros que generan la multiplicacion mas grande de la matriz
 a=int()
 b=int()
 c=int()
 d=int()
-#buscando la mayor multiplicacion de 4 numeros adjacentes de forma horizontal
+#buscando la mayor multiplicacion de 4 numeros adjacentes de forma horizontal, tenemos algo asi.
 for i in range(len(matriz)):
     for j in range(len(matriz[i])-3):
         producto=matriz[i][j]*matriz[i][j+1]*matriz[i][j+2]*matriz[i][j+3]
@@ -79,12 +79,10 @@ print "factores : %d * %d * %d * %d" % (a,b,c,d)
 
 
 j=3
-contador=0
 mayor=-999999999
 for i in range(len(matriz)-3):
     for j in range(len(matriz)-3):
         producto=matriz[i][j]*matriz[i+1][j-1]*matriz[i+2][j-2]*matriz[i+3][j-3]
-        contador+=1
         if producto>mayor:
             mayor=producto            
             a=matriz[i][j]
