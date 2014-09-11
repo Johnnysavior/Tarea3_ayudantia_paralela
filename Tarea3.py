@@ -1,5 +1,21 @@
 # -*- coding: cp1252 -*-
+"""
+
+Tarea 3 Ayudantia Computación Paralela Segundo Semestre 2014.
+
+Integrantes: Jonathan León S. (johnnysavior)
+             Juan Cortez G. ()
+             Christopher Salvatierra L. ()
+             Felipe Alvarez R. ()
+"""
+
+"""
+1.- Obtener una solución serial al algoritmo
+"""
 # En primer lugar debemos de abrir el fichero que vamos a leer.
+# Se debe incluir el archivo adjunto matriz.txt para la correcta
+# Ejecuccion de este codigo.
+
 archivo = open('matriz.txt', 'r')
 #leemos linea por linea y guardamos en una lista
 matriz=archivo.readlines()
@@ -108,3 +124,20 @@ print "\nProducto mayor en la matriz: %d" %(mayor_final)
         
 # Cerramos el fichero.
 archivo.close()
+
+"""
+2.- Describa como puede dividir el problema para cuando tiene p procesadores
+
+R: Una solución sería dividir de acuerdo al método de busqueda de los factores que den mayor
+resuldado en la matriz. Para este caso, podriamos usar 4 procesadores, donde cada uno ejecutaria
+la busqueda de forma vertical, otro de forma horizontal, otro de forma diagonal derecha-izquierda
+y el ultimo procesador buscara de  izquierda-derecha.Finalmente comparar los resultados que obtuvo
+cada procesador y quedarse con el mayor de todos.
+
+"""
+
+
+
+
+
+
