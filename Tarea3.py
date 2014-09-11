@@ -1,16 +1,16 @@
 # -*- coding: cp1252 -*-
 """
 
-Tarea 3 Ayudantia Computación Paralela Segundo Semestre 2014.
+Tarea 3 Ayudantia ComputaciÃ³n Paralela Segundo Semestre 2014.
 
-Integrantes: Jonathan León S. (johnnysavior)
+Integrantes: Jonathan LeÃ³n S. (johnnysavior)
              Juan Cortez G. ()
-             Christopher Salvatierra L. ()
+             Christopher Salvatierra L. (Chris2141)
              Felipe Alvarez R. ()
 """
 
 """
-1.- Obtener una solución serial al algoritmo
+1.- Obtener una soluciÃ³n serial al algoritmo
 """
 # En primer lugar debemos de abrir el fichero que vamos a leer.
 # Se debe incluir el archivo adjunto matriz.txt para la correcta
@@ -128,7 +128,7 @@ archivo.close()
 """
 2.- Describa como puede dividir el problema para cuando tiene p procesadores
 
-R: Una solución sería dividir de acuerdo al método de busqueda de los factores que den mayor
+R: Una soluciÃ³n serÃ­a dividir de acuerdo al mÃ©todo de busqueda de los factores que den mayor
 resuldado en la matriz. Para este caso, podriamos usar 4 procesadores, donde cada uno ejecutaria
 la busqueda de forma vertical, otro de forma horizontal, otro de forma diagonal derecha-izquierda
 y el ultimo procesador buscara de  izquierda-derecha.Finalmente comparar los resultados que obtuvo
