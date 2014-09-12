@@ -4,7 +4,7 @@
 Tarea 3 Ayudantia Computación Paralela Segundo Semestre 2014.
 
 Integrantes: Jonathan León S. (johnnysavior)
-             Juan Cortez G. ()
+             Juan Cortez G. (juannmmaa)
              Christopher Salvatierra L. (Chris2141)
              Felipe Alvarez R. (fliseven)
 """
